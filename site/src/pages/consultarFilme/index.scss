@@ -1,0 +1,426 @@
+* {
+    font-family: 'Nunito';
+}
+
+.page-consultar {
+    display: flex;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        background-color: #dadada;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .caixa-busca {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 7%;
+        border-radius: 10vh;
+        box-shadow: 1px 1px 5px #dcdcdc;
+        width: 40%;
+        outline: none;
+        margin-top: 5vh;
+
+        .imgBuscar {
+            height: 60%;
+            margin: 1.5vh;
+            cursor: pointer;
+        }
+    }
+
+    .caixa-busca input {
+        background: none;
+        border: none;
+        width: 100%;
+        outline: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-top: 5vh;
+        width: 90%;
+    }
+
+    th {
+        color: #C0C0C0;
+        height: 7vh;
+        width: 70vw;
+        font-size: 14px;
+        text-shadow: 0px 1px 4px #d9d9d980;
+    }
+
+    thead {
+        background-color: #970000;
+    }
+
+    td {
+        align-items: center;
+        text-align: center;
+        padding: 4vh;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #EDEDED;
+    }
+
+    tbody tr:hover {
+        background-color: #e1e1e1;
+        cursor: pointer;
+    }
+
+    td img {
+        width: 25%;
+        cursor: pointer;
+    }
+
+    tr td:nth-child(2) {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; 
+        width: 20vw;
+    }
+
+    tr td:nth-child(1) {
+        color: #606060;
+        font-weight: 700;
+    }
+
+    tr td:nth-last-child(1) * {
+        visibility: hidden;
+    }
+
+    tr:hover td:nth-last-child(1) img {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1440px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .page-consultar {
+        display: flex;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+    
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            background-color: #dadada;
+            flex-grow: 1;
+            align-items: center;
+        }
+    
+        .caixa-busca {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            height: 5%;
+            border-radius: 10vh;
+            box-shadow: 1px 1px 5px #dcdcdc;
+            width: 40%;
+            outline: none;
+            margin-top: 5vh;
+    
+            .imgBuscar {
+                height: 45%;
+                margin: 1.5vh;
+                cursor: pointer;
+            }
+        }
+    
+        .caixa-busca input {
+            background: none;
+            border: none;
+            width: 100%;
+            outline: none;
+        }
+    
+        table {
+            border-collapse: collapse;
+            margin-top: 5vh;
+            width: 90%;
+        }
+    
+        th {
+            color: #C0C0C0;
+            height: 5vh;
+            width: 70vw;
+            font-size: 12px;
+            text-shadow: 0px 1px 4px #d9d9d980;
+        }
+    
+        thead {
+            background-color: #970000;
+        }
+    
+        td {
+            align-items: center;
+            text-align: center;
+            padding: 4vh;
+        }
+    
+        tbody tr:nth-child(even) {
+            background-color: #EDEDED;
+        }
+    
+        tbody tr:hover {
+            background-color: #e1e1e1;
+            cursor: pointer;
+        }
+    
+        td img {
+            width: 25%;
+            cursor: pointer;
+        }
+    
+        tr td:nth-child(2) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; 
+            width: 20vw;
+        }
+    
+        tr td:nth-child(1) {
+            color: #606060;
+            font-weight: 700;
+        }
+    
+        tr td:nth-last-child(1) * {
+            visibility: hidden;
+        }
+    
+        tr:hover td:nth-last-child(1) img {
+            visibility: visible;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .page-consultar {
+        display: flex;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+    
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            background-color: #dadada;
+            flex-grow: 1;
+            align-items: center;
+        }
+    
+        .caixa-busca {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            height: 5%;
+            border-radius: 10vh;
+            box-shadow: 1px 1px 5px #dcdcdc;
+            width: 40%;
+            outline: none;
+            margin-top: 5vh;
+    
+            .imgBuscar {
+                height: 45%;
+                margin: 1.5vh;
+                cursor: pointer;
+            }
+        }
+    
+        .caixa-busca input {
+            background: none;
+            border: none;
+            width: 100%;
+            outline: none;
+        }
+    
+        table {
+            border-collapse: collapse;
+            margin-top: 5vh;
+            width: 90%;
+        }
+    
+        th {
+            color: #C0C0C0;
+            height: 5vh;
+            width: 70vw;
+            font-size: 12px;
+            text-shadow: 0px 1px 4px #d9d9d980;
+        }
+    
+        thead {
+            background-color: #970000;
+        }
+    
+        td {
+            align-items: center;
+            text-align: center;
+            padding: 4vh;
+        }
+    
+        tbody tr:nth-child(even) {
+            background-color: #EDEDED;
+        }
+    
+        tbody tr:hover {
+            background-color: #e1e1e1;
+            cursor: pointer;
+        }
+    
+        td img {
+            width: 25%;
+            cursor: pointer;
+        }
+    
+        tr td:nth-child(2) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; 
+            width: 20vw;
+        }
+    
+        tr td:nth-child(1) {
+            color: #606060;
+            font-weight: 700;
+        }
+    
+        tr td:nth-last-child(1) * {
+            visibility: hidden;
+        }
+    
+        tr:hover td:nth-last-child(1) img {
+            visibility: visible;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .page-consultar {
+        display: flex;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+    
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            background-color: #dadada;
+            flex-grow: 1;
+            align-items: center;
+        }
+    
+        .caixa-busca {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            height: 5%;
+            border-radius: 10vh;
+            box-shadow: 1px 1px 5px #dcdcdc;
+            width: 40%;
+            outline: none;
+            margin-top: 5vh;
+    
+            .imgBuscar {
+                height: 45%;
+                margin: 1.5vh;
+                cursor: pointer;
+            }
+        }
+    
+        .caixa-busca input {
+            background: none;
+            border: none;
+            width: 100%;
+            outline: none;
+        }
+    
+        table {
+            border-collapse: collapse;
+            margin-top: 5vh;
+            width: 90%;
+        }
+    
+        th {
+            color: #C0C0C0;
+            height: 5vh;
+            width: 70vw;
+            font-size: 12px;
+            text-shadow: 0px 1px 4px #d9d9d980;
+        }
+    
+        thead {
+            background-color: #970000;
+        }
+    
+        td {
+            align-items: center;
+            text-align: center;
+            padding: 4vh;
+            font-size: 10px;
+        }
+    
+        tbody tr:nth-child(even) {
+            background-color: #EDEDED;
+        }
+    
+        tbody tr:hover {
+            background-color: #e1e1e1;
+            cursor: pointer;
+        }
+    
+        td img {
+            width: 25%;
+            cursor: pointer;
+        }
+    
+        tr td:nth-child(2) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; 
+            width: 20vw;
+        }
+    
+        tr td:nth-child(1) {
+            color: #606060;
+            font-weight: 700;
+        }
+    
+        tr td:nth-last-child(1) * {
+            visibility: hidden;
+        }
+    
+        tr:hover td:nth-last-child(1) img {
+            visibility: visible;
+        }
+    }
+}

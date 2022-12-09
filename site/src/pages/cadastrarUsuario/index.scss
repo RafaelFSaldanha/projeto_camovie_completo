@@ -1,0 +1,566 @@
+* {
+    font-family: 'Nunito';
+}
+
+.cadastrarUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    height: 100vh;
+
+    .detalheCima {
+        position: absolute;
+        width: 20%;
+        height: 43%;
+        background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+        margin-bottom: 57vh;
+        margin-right: 80vw;
+    }
+
+    .detalheBaixo {
+        position: absolute;
+        width: 20%;
+        height: 43%;
+        background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+        margin-top: 57vh;
+        margin-left: 80vw;
+    }
+
+    .divCadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 75%;
+        width: 30%;
+        background: #1C1B1B;
+        border-width: 0px 1px 1px 0px;
+        border-style: solid;
+        border-color: #DD0000;
+        box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 3vh;
+
+        .tituloCadastro {
+            color: #970000;
+            font-weight: 400;
+            font-size: 5vh;
+            margin-top: 3vh;
+        }
+
+        .divInputs {
+            display: flex;
+            flex-direction: column;
+            align-items:  center;
+            height: 70%;
+            width: 85%;
+
+            .inputGroup {
+                position: relative;
+                height: 17%;
+                width: 95%;
+            
+                .input {
+                    border: 1px solid #970000;
+                    padding: 1vh;
+                    background-color: #C7C7C7;;
+                    border-radius: 5vh;
+                    outline: none;
+                    color: #000000;
+                    height: 60%;
+                    width: 100%;
+                    margin-bottom: 3vh;
+                }
+
+                .placeholder {
+                    position: absolute;
+                    top: 1.3vh;
+                    left: 0.5vw;
+                    font-size: 2vh;
+                    padding: 0px 1vw;
+                    color: #970000;
+                    transition: 0.3s;
+                    pointer-events: none;
+                }
+
+                .input:focus  + .placeholder,
+                .input:not(:placeholder-shown)
+                + .placeholder{
+                    top: -2.2vh;
+                    color: #C0C0C0;
+                }
+            }
+
+            .erro {
+                display: flex;
+                flex-direction: row;
+                font-size: 2.5vh;
+                color: #DD0000;
+                height: 7%;
+                width: 48%;
+                margin-top: 3vh;
+                text-decoration: underline;
+            }
+        }
+
+        .botaoCadastrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -15vh;
+            width: 25%;
+            height: 8%;
+            background: #970000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: none;
+            font-size: 2.5vh;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+
+        .botaoCadastrar:hover {
+            transform: translateY(-1vh);
+        }
+
+        .botaoCadastrar:active {
+            transform: translateY(-0.5vh);
+        }
+
+        .pBaixo {
+            color: #808080;
+
+            .aPBaixo {
+                color: #970000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .cadastrarUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }   
+    
+        .divCadastro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 33%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+            margin-top: -7vh;
+    
+            .tituloCadastro {
+                color: #970000;
+                font-weight: 400;
+                font-size: 5vh;
+                margin-top: 3vh;
+            }
+    
+            .divInputs {
+                display: flex;
+                flex-direction: column;
+                align-items:  center;
+                height: 70%;
+                width: 85%;
+    
+                .inputGroup {
+                    position: relative;
+                    height: 17%;
+                    width: 95%;
+                
+                    .input {
+                        border: 1px solid #970000;
+                        padding: 1vh;
+                        background-color: #C7C7C7;;
+                        border-radius: 5vh;
+                        outline: none;
+                        color: #000000;
+                        height: 60%;
+                        width: 100%;
+                        margin-bottom: 3vh;
+                    }
+    
+                    .placeholder {
+                        position: absolute;
+                        top: 1vh;
+                        left: 0.5vw;
+                        font-size: 1.8vh;
+                        padding: 0px 1vw;
+                        color: #970000;
+                        transition: 0.3s;
+                        pointer-events: none;
+                    }
+    
+                    .input:focus  + .placeholder,
+                    .input:not(:placeholder-shown)
+                    + .placeholder{
+                        top: -2.2vh;
+                        color: #C0C0C0;
+                    }
+                }
+    
+                .erro {
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 2vh;
+                    color: #DD0000;
+                    height: 7%;
+                    width: 53%;
+                    margin-top: 3vh;
+                    text-decoration: underline;
+                }
+            }
+    
+            .botaoCadastrar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -15vh;
+                width: 30%;
+                height: 7%;
+                background: #970000;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+                border: none;
+                font-size: 2.2vh;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+    
+            .botaoCadastrar:hover {
+                transform: translateY(-1vh);
+            }
+    
+            .botaoCadastrar:active {
+                transform: translateY(-0.5vh);
+            }
+    
+            .pBaixo {
+                color: #808080;
+    
+                .aPBaixo {
+                    color: #970000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .cadastrarUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }   
+    
+        .divCadastro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 33%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+            margin-top: -7vh;
+    
+            .tituloCadastro {
+                color: #970000;
+                font-weight: 400;
+                font-size: 4.3vh;
+                margin-top: 3vh;
+            }
+    
+            .divInputs {
+                display: flex;
+                flex-direction: column;
+                align-items:  center;
+                height: 70%;
+                width: 85%;
+    
+                .inputGroup {
+                    position: relative;
+                    height: 17%;
+                    width: 95%;
+                
+                    .input {
+                        border: 1px solid #970000;
+                        padding: 1vh;
+                        background-color: #C7C7C7;;
+                        border-radius: 5vh;
+                        outline: none;
+                        color: #000000;
+                        height: 60%;
+                        width: 100%;
+                        margin-bottom: 3vh;
+                    }
+    
+                    .placeholder {
+                        position: absolute;
+                        top: 1vh;
+                        left: 0.5vw;
+                        font-size: 1.8vh;
+                        padding: 0px 1vw;
+                        color: #970000;
+                        transition: 0.3s;
+                        pointer-events: none;
+                    }
+    
+                    .input:focus  + .placeholder,
+                    .input:not(:placeholder-shown)
+                    + .placeholder{
+                        top: -2.2vh;
+                        color: #C0C0C0;
+                    }
+                }
+    
+                .erro {
+                    font-size: 1.7vh;
+                    color: #DD0000;
+                    height: 3vh;
+                    width: 14vw;
+                    margin-top: 3vh;
+                    text-decoration: underline;
+                }
+            }
+    
+            .botaoCadastrar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -15vh;
+                width: 30%;
+                height: 7%;
+                background: #970000;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+                border: none;
+                font-size: 2.3vh;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+    
+            .botaoCadastrar:hover {
+                transform: translateY(-1vh);
+            }
+    
+            .botaoCadastrar:active {
+                transform: translateY(-0.5vh);
+            }
+    
+            .pBaixo {
+                color: #808080;
+    
+                .aPBaixo {
+                    color: #970000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .cadastrarUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }   
+    
+        .divCadastro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 33%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+            margin-top: -7vh;
+    
+            .tituloCadastro {
+                color: #970000;
+                font-weight: 400;
+                font-size: 4.3vh;
+                margin-top: 3vh;
+            }
+    
+            .divInputs {
+                display: flex;
+                flex-direction: column;
+                align-items:  center;
+                height: 70%;
+                width: 85%;
+    
+                .inputGroup {
+                    position: relative;
+                    height: 17%;
+                    width: 95%;
+                
+                    .input {
+                        border: 1px solid #970000;
+                        padding: 1vh;
+                        background-color: #C7C7C7;;
+                        border-radius: 5vh;
+                        outline: none;
+                        color: #000000;
+                        height: 60%;
+                        width: 100%;
+                        margin-bottom: 3vh;
+                    }
+    
+                    .placeholder {
+                        position: absolute;
+                        top: 1vh;
+                        left: 0.5vw;
+                        font-size: 1.8vh;
+                        padding: 0px 1vw;
+                        color: #970000;
+                        transition: 0.3s;
+                        pointer-events: none;
+                    }
+    
+                    .input:focus  + .placeholder,
+                    .input:not(:placeholder-shown)
+                    + .placeholder{
+                        top: -2.2vh;
+                        color: #C0C0C0;
+                    }
+                }
+    
+                .erro {
+                    font-size: 1.7vh;
+                    color: #DD0000;
+                    height: 3vh;
+                    width: 14vw;
+                    margin-top: 3vh;
+                    text-decoration: underline;
+                }
+            }
+    
+            .botaoCadastrar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -15vh;
+                width: 30%;
+                height: 7%;
+                background: #970000;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+                border: none;
+                font-size: 2.3vh;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+    
+            .botaoCadastrar:hover {
+                transform: translateY(-1vh);
+            }
+    
+            .botaoCadastrar:active {
+                transform: translateY(-0.5vh);
+            }
+    
+            .pBaixo {
+                color: #808080;
+                font-size: 1.8vh;
+        
+                .aPBaixo {
+                    color: #970000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

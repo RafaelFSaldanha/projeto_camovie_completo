@@ -1,0 +1,409 @@
+* {
+    font-family: 'Nunito';
+}
+
+.primeiraOpcao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    height: 100vh;
+
+    .detalheCima {
+        position: absolute;
+        width: 20%;
+        height: 43%;
+        background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+        margin-bottom: 57vh;
+        margin-right: 80vw;
+    }
+
+    .detalheBaixo {
+        position: absolute;
+        width: 20%;
+        height: 43%;
+        background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+        margin-top: 57vh;
+        margin-left: 80vw;
+    }
+
+    .divOpcoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 75%;
+        width: 27%;
+        background: #1C1B1B;
+        border-width: 0px 1px 1px 0px;
+        border-style: solid;
+        border-color: #DD0000;
+        box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 3vh;
+
+        .titulo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .logo {
+                height: 40%;
+                width: 37%;
+                margin-top: 1vh;
+            }
+
+            .tituloOpcao1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #C0C0C0;
+                font-size: 5vh;
+                margin-top: 5vh;
+                margin-bottom: 7vh;
+                height: 10vh;
+                width: 20vw;
+                text-align: center;
+            }
+        }
+
+        .tituloOpcao2 {
+            color: #C0C0C0;
+            font-weight: 400;
+            font-size: 4vh;
+            margin-bottom: 2vh;
+        }
+
+        .opcoes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5vh;
+            width: 40vh;
+            height: 60%;
+            background: #970000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10vh;
+            border: none;
+            font-size: 2.5vh;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+
+        .opcoes:hover {
+            transform: translateY(-1vh);
+        }
+    
+        .opcoes:active {
+            transform: translateY(-0.5vh);
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .primeiraOpcao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }
+    
+        .divOpcoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 33%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+    
+            .titulo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .logo {
+                    height: 40%;
+                    width: 37%;
+                    margin-top: 1vh;
+                }
+    
+                .tituloOpcao1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #C0C0C0;
+                    font-size: 3.5vh;
+                    margin-top: 4vh;
+                    margin-bottom: 7vh;
+                    height: 10vh;
+                    width: 20vw;
+                    text-align: center;
+                }
+            }
+    
+            .tituloOpcao2 {
+                color: #C0C0C0;
+                font-weight: 400;
+                font-size: 3vh;
+                margin-bottom: 2vh;
+            }
+    
+            .opcoes {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vh;
+                width: 30vh;
+                height: 60%;
+                background: #970000;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10vh;
+                border: none;
+                font-size: 2.2vh;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+    
+            .opcoes:hover {
+                transform: translateY(-1vh);
+            }
+        
+            .opcoes:active {
+                transform: translateY(-0.5vh);
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .primeiraOpcao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }
+    
+        .divOpcoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 35%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+    
+            .titulo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .logo {
+                    height: 40%;
+                    width: 37%;
+                    margin-top: 1vh;
+                }
+    
+                .tituloOpcao1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #C0C0C0;
+                    font-size: 3.3vh;
+                    margin-top: 4vh;
+                    margin-bottom: 7vh;
+                    height: 10vh;
+                    width: 20vw;
+                    text-align: center;
+                }
+            }
+    
+            .tituloOpcao2 {
+                color: #C0C0C0;
+                font-weight: 400;
+                font-size: 2.7vh;
+                margin-bottom: 2vh;
+            }
+    
+            .opcoes {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vh;
+                width: 27vh;
+                height: 60%;
+                background: #970000;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10vh;
+                border: none;
+                font-size: 2.2vh;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+    
+            .opcoes:hover {
+                transform: translateY(-1vh);
+            }
+        
+            .opcoes:active {
+                transform: translateY(-0.5vh);
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .primeiraOpcao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }
+    
+        .divOpcoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 35%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+    
+            .titulo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .logo {
+                    height: 40%;
+                    width: 40%;
+                    margin-top: 1vh;
+                }
+    
+                .tituloOpcao1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #C0C0C0;
+                    font-size: 3.3vh;
+                    margin-top: 2vh;
+                    margin-bottom: 5vh;
+                    height: 10vh;
+                    width: 20vw;
+                    text-align: center;
+                }
+            }
+    
+            .tituloOpcao2 {
+                color: #C0C0C0;
+                font-weight: 400;
+                font-size: 2.7vh;
+                margin-bottom: 2vh;
+            }
+    
+            .opcoes {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vh;
+                width: 27vh;
+                height: 60%;
+                background: #970000;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10vh;
+                border: none;
+                font-size: 2.2vh;
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+            }
+    
+            .opcoes:hover {
+                transform: translateY(-1vh);
+            }
+        
+            .opcoes:active {
+                transform: translateY(-0.5vh);
+            }
+        }
+    }
+}

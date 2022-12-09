@@ -1,0 +1,535 @@
+* {
+    font-family: 'Nunito';
+}
+
+.loginUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    height: 100vh;
+
+    .detalheCima {
+        position: absolute;
+        width: 20%;
+        height: 43%;
+        background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+        margin-bottom: 57vh;
+        margin-right: 80vw;
+    }
+
+    .detalheBaixo {
+        position: absolute;
+        width: 20%;
+        height: 43%;
+        background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+        margin-top: 57vh;
+        margin-left: 80vw;
+    }
+
+    .divLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 30%;
+        background: #1C1B1B;
+        border-width: 0px 1px 1px 0px;
+        border-style: solid;
+        border-color: #DD0000;
+        box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 3vh;
+        margin-top: -7vh;
+
+        .tituloLogin {
+            color: #970000;
+            font-weight: 400;
+            font-size: 5vh;
+            margin-top: 5vh;
+            margin-bottom: 7vh;
+        }
+
+        .inputGroup {
+            position: relative;
+            width: 85%;
+            height: 7%;
+            margin-top: 3vh;
+        
+            .input {
+                border: 1px solid #970000;
+                padding: 1vh;
+                background-color: #C7C7C7;;
+                border-radius: 5vh;
+                outline: none;
+                color: #000000;
+                width: 100%;
+                height: 100%;
+            }
+
+            .placeholder {
+                position: absolute;
+                top: 1.3vh;
+                left: 0.5vw;
+                font-size: 2vh;
+                padding: 0px 1vw;
+                color: #970000;
+                transition: 0.3s;
+                pointer-events: none;
+            }
+
+            .input:focus  + .placeholder,
+            .input:not(:placeholder-shown)
+            + .placeholder{
+                top: -2.2vh;
+                color: #C0C0C0;
+            }
+        }
+
+        .erro {
+            font-size: 2.5vh;
+            color: #DD0000;
+            height: 3vh;
+            width: 11.5vw;
+            margin-top: 5vh;
+            text-decoration: underline;
+        }
+    }
+
+    .botaoLogar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20vh;
+        width: 10%;
+        height: 6%;
+        background: #970000;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        border: none;
+        font-size: 2.5vh;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    .botaoLogar:hover {
+        transform: translateY(-1vh);
+    }
+
+    .botaoLogar:active {
+        transform: translateY(-0.5vh);
+    }
+
+    .pBaixo {
+        margin-top: 3vh;
+        color: #808080;
+
+        .aPBaixo {
+            color: #970000;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .loginUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }
+    
+        .divLogin {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 33%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+            margin-top: -7vh;
+    
+            .tituloLogin {
+                color: #970000;
+                font-weight: 400;
+                font-size: 4.5vh;
+                margin-top: 5vh;
+                margin-bottom: 7vh;
+            }
+    
+            .inputGroup {
+                position: relative;
+                width: 85%;
+                height: 7%;
+                margin-top: 3vh;
+            
+                .input {
+                    border: 1px solid #970000;
+                    background-color: #C7C7C7;;
+                    border-radius: 5vh;
+                    outline: none;
+                    color: #000000;
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                .placeholder {
+                    position: absolute;
+                    top: 1vh;
+                    left: 0.5vw;
+                    font-size: 1.8vh;
+                    padding: 0px 1vw;
+                    color: #970000;
+                    transition: 0.3s;
+                    pointer-events: none;
+                }
+    
+                .input:focus  + .placeholder,
+                .input:not(:placeholder-shown)
+                + .placeholder{
+                    top: -2.2vh;
+                    color: #C0C0C0;
+                }
+            }
+    
+            .erro {
+                font-size: 2vh;
+                color: #DD0000;
+                height: 3vh;
+                width: 14vw;
+                margin-top: 5vh;
+                text-decoration: underline;
+            }
+        }
+    
+        .botaoLogar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20vh;
+            width: 12%;
+            height: 5%;
+            background: #970000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: none;
+            font-size: 2.5vh;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+    
+        .botaoLogar:hover {
+            transform: translateY(-1vh);
+        }
+    
+        .botaoLogar:active {
+            transform: translateY(-0.5vh);
+        }
+    
+        .pBaixo {
+            margin-top: 3vh;
+            color: #808080;
+    
+            .aPBaixo {
+                color: #970000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .loginUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }
+    
+        .divLogin {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 35%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+            margin-top: -7vh;
+    
+            .tituloLogin {
+                color: #970000;
+                font-weight: 400;
+                font-size: 4.3vh;
+                margin-top: 5vh;
+                margin-bottom: 7vh;
+            }
+    
+            .inputGroup {
+                position: relative;
+                width: 85%;
+                height: 7%;
+                margin-top: 3vh;
+            
+                .input {
+                    border: 1px solid #970000;
+                    background-color: #C7C7C7;;
+                    border-radius: 5vh;
+                    outline: none;
+                    color: #000000;
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                .placeholder {
+                    position: absolute;
+                    top: 1vh;
+                    left: 0.5vw;
+                    font-size: 1.8vh;
+                    padding: 0px 1vw;
+                    color: #970000;
+                    transition: 0.3s;
+                    pointer-events: none;
+                }
+    
+                .input:focus  + .placeholder,
+                .input:not(:placeholder-shown)
+                + .placeholder{
+                    top: -2.2vh;
+                    color: #C0C0C0;
+                }
+            }
+    
+            .erro {
+                font-size: 1.7vh;
+                color: #DD0000;
+                height: 3vh;
+                width: 14vw;
+                margin-top: 3vh;
+                text-decoration: underline;
+            }
+        }
+    
+        .botaoLogar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20vh;
+            width: 12%;
+            height: 5%;
+            background: #970000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: none;
+            font-size: 2.3vh;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+    
+        .botaoLogar:hover {
+            transform: translateY(-1vh);
+        }
+    
+        .botaoLogar:active {
+            transform: translateY(-0.5vh);
+        }
+    
+        .pBaixo {
+            margin-top: 3vh;
+            color: #808080;
+    
+            .aPBaixo {
+                color: #970000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-family: 'Nunito';
+    }
+    
+    .loginUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        height: 100vh;
+    
+        .detalheCima {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(315deg, #202020 46.28%, #DD0000 100%);
+            margin-bottom: 73vh;
+            margin-right: 80vw;
+        }
+    
+        .detalheBaixo {
+            position: absolute;
+            width: 20%;
+            height: 27%;
+            background: linear-gradient(134.37deg, #202020 46.86%, #DD0000 100%);
+            margin-top: 73vh;
+            margin-left: 80vw;
+        }
+    
+        .divLogin {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 65%;
+            width: 35%;
+            background: #1C1B1B;
+            border-width: 0px 1px 1px 0px;
+            border-style: solid;
+            border-color: #DD0000;
+            box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 3vh;
+            margin-top: -7vh;
+    
+            .tituloLogin {
+                color: #970000;
+                font-weight: 400;
+                font-size: 4.3vh;
+                margin-top: 5vh;
+                margin-bottom: 7vh;
+            }
+    
+            .inputGroup {
+                position: relative;
+                width: 85%;
+                height: 7%;
+                margin-top: 3vh;
+            
+                .input {
+                    border: 1px solid #970000;
+                    background-color: #C7C7C7;;
+                    border-radius: 5vh;
+                    outline: none;
+                    color: #000000;
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                .placeholder {
+                    position: absolute;
+                    top: 1vh;
+                    left: 0.5vw;
+                    font-size: 1.8vh;
+                    padding: 0px 1vw;
+                    color: #970000;
+                    transition: 0.3s;
+                    pointer-events: none;
+                }
+    
+                .input:focus  + .placeholder,
+                .input:not(:placeholder-shown)
+                + .placeholder{
+                    top: -2.2vh;
+                    color: #C0C0C0;
+                }
+            }
+    
+            .erro {
+                font-size: 1.7vh;
+                color: #DD0000;
+                height: 3vh;
+                width: 12vw;
+                margin-top: 4vh;
+                text-decoration: underline;
+            }
+        }
+    
+        .botaoLogar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20vh;
+            width: 12%;
+            height: 5%;
+            background: #970000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: none;
+            font-size: 2.3vh;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+    
+        .botaoLogar:hover {
+            transform: translateY(-1vh);
+        }
+    
+        .botaoLogar:active {
+            transform: translateY(-0.5vh);
+        }
+    
+        .pBaixo {
+            margin-top: 3vh;
+            color: #808080;
+            font-size: 1.8vh;
+    
+            .aPBaixo {
+                color: #970000;
+                text-decoration: underline;
+            }
+        }
+    }
+}
